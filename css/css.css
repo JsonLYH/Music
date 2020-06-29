@@ -1,0 +1,141 @@
+	.carousel-inner img{
+				-webkit-filter: grayscale(90%);
+				filter:grayscale(90%);  /*将图片设置为黑白*/
+				width: 100%;
+				margin: auto;
+			}
+			.carousel-caption h3{
+				color: #fff !important;
+			}
+			@media(min-width: 600px) {
+				.carousel-caption{
+					display: none;  /*屏幕宽度小于600px时,隐藏轮播文本*/
+				}
+			}
+			.container{
+				padding: 80px 120px;
+			}
+			.person{
+				border: 10px solid transparent;
+				margin-bottom: 20px;
+				width: 80%;
+				height: 80%;
+				opacity: 0.7;
+			}
+			.person:hover{
+				border-color: #f1f1f1;
+			}
+			.bg-1{
+				background: #2d2d2d;
+				color: #DBDBDB;
+			}
+			.bg-1 h3{
+				color: #fff;
+			}
+			.bg-1 p{
+				font-style: italic;
+			}
+			/*移去列表组的边框圆角*/
+			.list-group-item:first-child{
+				border-top-left-radius: 0;
+				border-top-right-radius: 0;
+			}
+			.list-group-item:last-child{
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+			}
+			/*移去缩略图的边框和增加内边距*/
+			.thumbnail{
+				padding: 0 0 15px 0;
+				border: none;
+				border-radius: 0;
+			}
+			/*改变缩略图中p标签的颜色和外边距*/
+			.thumbnail p{
+				margin-top: 15px;
+				color: #555;
+			}
+			/*设置按钮的背景颜色,字体颜色、内边距和外边距、动画时间*/
+			.tbn{
+				padding: 10px 20px;
+				background-color: #333;
+				color: #f1f1f1;
+				border-radius: 0;
+				transition: .2s;
+			}
+			/*设置当鼠标滑过按钮和得到焦点时的颜色。按钮从黑色变为白色时会有渐变效果*/
+			.btn:hover,.btn:focus{
+				border: 1px solid #333;
+				background-color: #fff;
+				color: #000;
+			}
+			
+			.modal-header, h4,.close{
+				background-color: #333;
+				color: #fff !important;
+				text-align: center;
+				font-size: 30px;
+			}
+			.modal-header,.modal-body{
+				padding: 45px 50px;
+			}
+			
+			
+			/*导航栏*/
+			.navbar{
+				margin-bottom:0 ;
+				background-color: #2d2d30;
+				border: 0;
+				font-size: 16px !important;
+				letter-spacing: 6px;
+				opacity: 0.9;
+			}
+			.navbar li a,.navbar .navbar-brand{
+				color: #d5d5d5 !important;
+			}
+			/*鼠标经过时导航项颜色变亮,背景加深*/
+			.navbar-nav li a:hover{
+				color: #fff !important;
+				background-color: #000000 !important;
+			}
+			/*当前li为白底黑字*/
+			.navbar-nav li .active a{
+				color: #000000 !important;
+				background-color: #fff !important;
+			}
+			/*去掉边框*/
+			.navbar-default .navbar-toggle{
+				border-color: transparent;
+			}
+			/*下拉菜单的颜色*/
+			.open .dropdown-toggle{
+				color: #fff !important;
+				background-color: #555;
+			}
+			/*下拉菜单项的字体颜色*/
+			.dropdown-menu li a {
+				color: #000000 !important;
+			}
+			/*当鼠标经过时，下拉菜单项背景颜色变为红色*/
+			.dropdown-menu li a:hover {
+				background-color: red !important;
+			}
+			#footer{
+				background-color: #2D2D30;
+				color: #F5F5F5;
+				padding: 32px;
+			}
+			#footer a {
+				color: #F5F5F5;
+			}
+			#footer a:hover{
+				color: #777777;
+				text-decoration: none;
+			}
+			/*地图*/
+			#baiduMap{
+				width: 100%;  /*Span the entire with of the screen*/
+				height: 650px; /* Set the height to 400 pixels*/
+				-webkit-filter: grayscale(100%);
+				filter: grayscale(100%);  /*Change hte color of black and white*/
+			}
